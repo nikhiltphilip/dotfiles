@@ -14,6 +14,7 @@
   "margin-bottom": 0,
   "modules-left": [
     "custom/distro",
+    "clock#utc",
     "mpd"
   ],
   "modules-center": [
@@ -50,6 +51,7 @@
     "interval": 60,
     "format": " {:%d/%m/%y  %I:%M %p}",
     "format-alt": " {:L%a, %B %d, %Y  %I:%M %p}",
+    "timezone": "Asia/Kolkata",
     "tooltip-format": "{calendar}",
     "calendar": {
       "mode": "month",
@@ -69,6 +71,12 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     }
+  },
+  "clock#utc": {
+    "interval": 60,
+    "format": " {:%I:%M %p}",
+    "timezone": "UTC",
+    "tooltip": false
   },
   "idle_inhibitor": {
     "format": "{icon}",
